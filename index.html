@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Velo'v : le site web</title>	
+	<!-- icone dans le navigateur -->
+	<link rel="icon" href="assets/img/Logo_Velov.png" />
+	<link rel="stylesheet" href="assets/css/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel=stylesheet href="assets/css/index.css"/>
+	<link rel=stylesheet href="assets/css/media.css"/>
+</head>
+<body >
+	<div class="container-fluid">
+
+		<header id="accueil">
+
+			<!-- fenetre nav modal -->
+
+			<div id="nav_modal" class="overlay">
+
+				<!-- bouton close -->
+
+			  	<nav>
+				  	<div class="agrandi haut backgroundColor" id="menu_close">
+				  		<span class="tranche"></span>
+						<span class="tranche"></span>
+						<span class="tranche"></span>
+				  	</div>
+			  	</nav>
+
+			  	<!-- logo -->
+			  	
+			  	<img src="assets/img/logo_fixed.png" alt="site de velov" id="logo_fixed"/>
+			  
+
+			  	<!-- navigation -->
+
+			  	<div id="liste_menu">
+			  		<ul>
+			  			<!-- liens avec titre au survol du lien -->
+				    	<li><a href="https://skergoat.com/projet3" target="_blank" title="Agence Web">Accueil</a></li>
+				    	<li><a href="https://velov.grandlyon.com/offers/groups" target="_blank" title="Découvrez tous nos bons plans">Offres</a></li>
+<!-- !! -->				<li><a href="#" title="Trouvez votre station">Carte</a></li>
+				  		<li><a href="https://velov.grandlyon.com/newscast" target="_blank" title="Les nouvelles fraiches !">Actualites</a></li>
+			  		</ul>
+			  	</div>
+
+			  	<!-- bouton contact -->
+
+			  	<div id="container_bouton_contact"><div id="bouton_contact"><a href="https://velov.grandlyon.com/account/create">s'inscrire</a></div></div>
+
+			</div>
+
+			<div class="cadre" id="cadre_left"></div>
+			<div class="cadre" id="cadre_right"></div>
+
+			<!-- slider box -->
+
+			<div class="container_scene">
+<!--
+				<div class="container_masques">
+			    	<div class="img_mask" id="mask_1">
+						<img src="assets/img/front.png" alt="En-Tete 1" id="en_tete_1" class="imageR">
+			    	</div>
+			    	<div class="img_mask" id="mask_2">
+						<img src="assets/img/back.png" alt="En-Tete 1" id="en_tete_2" class="imageR">
+					</div>
+		    		<div class="img_mask" id="mask_3">
+						<img src="assets/img/left.png" alt="En-Tete 1" id="en_tete_3" class="imageR">
+					</div>
+		    		<div class="img_mask" id="mask_4">
+						<img src="assets/img/right.png" alt="En-Tete 1" id="en_tete_4" class="imageR">
+					</div>
+				</div>
+-->
+				<!-- titres slider -->
+
+				<div class="textes">
+					<div class="container_titres">
+						<div id="titre_1" class="titre"><h5>1. Sélectionner votre station</h5></div>
+						<div id="titre_2" class="titre"><h5>2. Consulter les disponibilites</h5></div>
+						<div id="titre_3" class="titre"><h5>3. Inscrivez-vous </h5></div>
+						<div id="titre_4" class="titre"><h5>4. Suivez votre réservation </h5></div>
+					</div>
+				</div>
+
+				<!-- cube -->
+
+				<div class="scene">
+				 	<div class="slider">
+					    <div class="face front frontBis" id="1"></div>
+					    <div class="face back backBis" id="3"></div>
+					    <div class="face right rightBis" id="4"></div>
+					    <div class="face left leftBis" id="2"></div>
+					    <div class="face bottom" id="0" ></div>
+					</div>
+				</div>
+
+				<!-- boutons droite et gauche cube -->
+
+				<form class="form_direction_slider">
+					<div class="direction_slider">
+						<button type="button" class="rotate" id="gauche"><i class="fas fa-caret-left"></i></button>
+						<button type="button" class="rotate" id="droite"><i class="fas fa-caret-right"></i></button>
+					</div>
+				</form>
+
+			</div>
+
+			<!-- bouton open -->
+
+			<nav class="cadre">
+				<div class="agrandi open backgroundColor" id="menu_open" >
+					<span class="tranche"></span>
+					<span class="tranche"></span>
+					<span class="tranche"></span>
+				</div>
+			</nav>
+
+			<!-- masques svg reflets cube 
+			Les masques vont creer des images en sens inverse
+			de celles contenues dans le slider. Cela donnera
+			l'illsuion d'un reflet. -->
+
+			<div class="cadre" id="cadre_bottom"></div>
+<!--
+			<svg height="0">
+			    <mask id="mask1">
+			        <rect width="800" height="400" fill="url(#gr)"/>
+			        <linearGradient x1="0" y1="0" x2="0" y2="1" id="gr">
+			            <stop offset="70%" stop-color="black" />
+			            <stop offset="100%" stop-color="white" />
+			        </linearGradient4>
+			    </mask>
+			</svg>
+
+			<svg height="0">
+			    <mask id="mask2">
+			        <rect width="800" height="400" fill="url(#gr)"/>
+			        <linearGradient x1="0" y1="0" x2="0" y2="1" id="gr">
+			            <stop offset="70%" stop-color="black" />
+			            <stop offset="100%" stop-color="white" />
+			        </linearGradient4>
+			    </mask>
+			</svg>
+
+			<svg height="0">
+			    <mask id="mask3">
+			        <rect width="800" height="400" fill="url(#gr)"/>
+			        <linearGradient x1="0" y1="0" x2="0" y2="1" id="gr">
+			            <stop offset="70%" stop-color="black" />
+			            <stop offset="100%" stop-color="white" />
+			        </linearGradient4>
+			    </mask>
+			</svg>
+
+			<svg height="0">
+			    <mask id="mask4">
+			        <rect width="800" height="400" fill="url(#gr)"/>
+			        <linearGradient x1="0" y1="0" x2="0" y2="1" id="gr">
+			            <stop offset="70%" stop-color="black" />
+			            <stop offset="100%" stop-color="white" />
+			        </linearGradient4>
+			    </mask>
+			</svg>
+-->
+		</header>
+
+		<section id="offres" class="sectionAuto">
+
+			<div class="container">
+
+				<!-- les gros titres -->
+
+				<div class="row">
+					<div class="col-lg-12 titres">
+						<div class="gros_titre">
+							<div class="trait_rouge titre_animated titre_animated1"></div>
+							<h2 class="titre_animated titre_animated1">nos offres</h2>
+						</div>
+						<div class="sous_titre titre_animated titre_animated1">À chacun son offre !</div>
+						<div class="sous_titre titre_animated titre_animated1">Pour vous déplacer selon vos besoins et vos envies en toute liberté découvrez toutes nos offres:<br>fidèle vélo'veur ou usager occasionnel, trouvez celle qui vous convient !</div>
+					</div>
+				</div>
+
+				<!-- les 3 offres -->
+
+				<div class="row container_cards">
+					<div class="mb-3 col-xl-3 col-lg-5 col-md-5 col-xs-12 align-self-stretch div_offres" id="offres1">
+						<div class="text1">VELO'V</div>
+						<div class="text2">AU QUOTIDIEN</div>
+						<div>
+							<p class="text3">
+								Profitez de nos formules annuelles à partir de 15 euros par an pour un nombre illimité de trajets avec les 15 premières minutes de chaque trajet gratuites.
+							</p>
+						</div>
+						<div class="text4 color">
+							<span class="text5">EN SAVOIR +</span>
+						</div>
+					</div>
+					<div class="mb-3 col-xl-3 col-lg-5 col-md-5 col-xs-12 align-self-stretch div_offres" id="offres2">
+						<div class="text1">VELO'V</div>
+						<div class="text2">A L'OCCASION</div>
+						<div>
+							<p class="text3">
+								Des formules sans engagement, pour découvrir le service ou explorer la ville, pour un trajet, une journée ou trois jours avec la Lyon City Card à partir de 1,80 € seulement.
+							</p>
+						</div>
+						<div class="text4 color">
+							<span class="text5">EN SAVOIR +</span>
+						</div>
+					</div>
+					<div class="mb-3 col-xl-3 col-lg-5 col-md-5 col-xs-12 align-self-stretch div_offres" id="offres3">
+						<div class="text1">MY VELO'V</div>
+						<div class="text2">LONGUE DUREE</div>
+						<div>
+							<p class="text3">
+								En partenariat avec les boutiques Cyclable, à partir du 30 juin, louez un vélo électrique pour 1 mois ou 1 an. Vous souhaitez en savoir plus: myvelov@jcdecaux.com.
+							</p>
+						</div>
+						<div class="text4 color">
+							<span class="text5">EN SAVOIR +</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- bouton de rensenement -->
+
+				<div class="col-lg-12 div_bouton">
+					<div class="bouton bouton1 ">
+						<a href="https://velov.grandlyon.com/offers/groups" target="_blank">Toutes nos offres</a>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="carte_section" class="section_carte">
+
+			<div id="carte"></div>
+
+			<div class="formulaire"> 
+				
+				<div class="infosStation container_bouton_fermer">
+					<div class="infoStation bouton_fermer">
+						<i class="fas fa-sort-up"></i>
+						<p>Fermer</p>
+						<i class="fas fa-caret-right color" id="closeForm"></i>
+					</div>
+				</div>
+
+				<div id="container_form_signature">
+
+					<div class="container_infos_station" >
+
+						<div class="titre_info infosStation titre_info_2"><h3>Etat des stations Velov</h3></div>
+
+						<div class="infosStation">
+							<p>
+								<span class="span_titre color">Nom de la station : </span><br>
+								<span class="span_info" id="span_1"></span>
+							</p>
+						</div>
+						<div  class="infosStation">
+							<p>
+								<span class="span_titre color">Adresse de la station : </span><br>
+								<span class="span_info" id="span_2"></span>
+							</p>
+						</div>
+						<div  class="infosStation">
+							<p><span class="span_titre color">Velos disponibles : </span><span class="span_info" id="span_3"></span></p>
+						</div>
+						<div  class="infosStation">
+							<p><span class="span_titre color">Emplacements disponibles : </span><span class="span_info" id="span_4"></span></p>
+						</div>
+						<div  class="infosStation">
+							<p><span class="span_titre color">Etat de la station : </span><span id="span_5"></span></p>
+						</div>
+
+					</div>
+
+					<div id="container_signature">
+
+						<div class="titre_info titre_info_signature infosStation"><h3>Reserver un velo</h3></div>
+						<div class="titre_signature infosStation"><h6>signature</h6></div>
+
+						<canvas id="signature" width="300" height="300"></canvas>
+
+						<div class="reservation">
+							<input type="button" id="recommencer" value="recommencer"/>
+							<input type="button" id="envoyer" value="envoyer"/>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="infos_piedDepage">
+
+					<div class="container_infos_piedDepage_titre">
+						<div class="infos_piedDepage_titre">
+							<p>Votre reservation est enregistree</p> 
+							<div class="container_annuler">
+								<input type="button" id="annuler" value="annuler" />
+							</div>
+						</div>
+					</div>
+					<div class="infos_piedPage_info">
+						<div class="infosStation">
+							<p>Nom de la station :<span id="name_station"></span></p>
+						</div>
+						<div class="infosStation">
+							<p>Temps restant <span id="temps_restant"></span></p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="actualites" class="sectionAuto">
+			
+			<div class="container container_actus">
+
+				<!-- les gros titres -->
+
+				<div class="row">
+					<div class="col-lg-12 titres">
+						<div class="gros_titre">
+							<div class="trait_rouge titre_animated titre_animated2"></div>
+							<h2 class="titre_animated titre_animated2">l'actualités velo'v</h2>
+						</div>
+						<div class="sous_titre titre_animated titre_animated2">Retrouvez toute l'actualité Vélo'v </div>
+						<div class="sous_titre titre_animated titre_animated2">et suivez nous directement sur notre <a href="https://www.facebook.com/velov.officiel/" target="_blank" class="color">page Facebook !</a></div>
+					</div>
+				</div>
+
+				<!-- les 3 actualites -->
+
+				<div class="row container_cards">
+					<div class="div_actus">
+						<a href="https://www.facebook.com/velov.officiel/posts/2283407155019281" target="_blank">
+							<img src="assets/img/velo3.jpg" alt="site de velov"/>
+							<div class="conteneur_texte">
+								<div class="text1 actus_1">Le 1/août/2018</div>
+								<div class="text2 rouge">Des questions ?</div>
+								<div>
+									<p class="text3 actus_3">
+										Vous avez des questions sur un abonnement, un trajet, un paiement etc.?
+										Rendez-vous sur notre site, rubrique FAQ pour vous apporter des réponses ! :) 💡
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="div_actus">
+						<a href="https://www.facebook.com/velov.officiel/posts/2314536288573034" target="_blank">
+							<img src="assets/img/velo2.jpg" alt="site de velov"/>
+							<div class="conteneur_texte">
+								<div class="text1 actus_1">Le 21/août/2018</div>
+								<div class="text2 rouge">Photos de vélos</div>
+								<div>
+									<p class="text3 actus_3">
+										Continuez à partager avec nous les Vélo'v du monde entier 🌍
+										Cette fois, l'honneur est à la Grosse Pomme avec cette jolie photo prise par Bertrand Hoch 🇺🇸
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="div_actus">
+						<a href="https://www.facebook.com/velov.officiel/posts/2307288639297799" target="_blank">
+							<img src="assets/img/velo1.jpg" alt="site de velov"/>
+							<div class="conteneur_texte">
+								<div class="text1 actus_1">Le 19 août 2018</div>
+								<div class="text2 rouge">Journée sans voiture</div>
+								<div>
+									<p class="text3 actus_3">
+										C'est la journée sans voiture !
+										Partagez avec nous en commentaire une jolie photo de votre escapade à vélo 😊🚲
+									</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- bouton de rensenement -->
+
+				<div class="col-lg-12 div_bouton">
+					<div class="bouton bouton2 backgroundColor">
+						<a href="https://www.facebook.com/velov.officiel/" target="_blank">Voir toutes nos actus</a>
+					</div>
+				</div>
+
+			</div>
+			
+		</section>
+
+		<footer>
+
+			<div class="container container_footer">
+
+				<!-- premiere couche du footer -->
+
+				<div class="row footer_1 footer_top">
+					<img src="assets/img/logo_footer.png" alt="site de velov" id="logo_footer" />
+					<div class="footer_1_div1">Velov est un site web d'information et de locaction de velos en ligne. Vous pouvez reserver en vous inscrivant sur notre site ou via notre application mobile.</div>
+				</div>
+
+				<!-- seconde couche du footer -->
+
+				<div class="row footer_1 footer_middle">
+
+					<!-- partie gauche du footer -->
+
+					<div class="footer_div div_bouton_footer">
+						<a href="https://velov.grandlyon.com/account/create"><div id="bouton_footer">s'inscrire</div></a>
+						<a href="https://velov.grandlyon.com/account/create"><img src="assets/img/img_footer.png" alt="site de velov" id="img_footer"/></a>
+					</div>
+
+					<!-- listes de droite du footer -->
+
+					<div class="footer_div_ul">
+						<ul class="footer_ul">
+							<li><a href="https://velov.grandlyon.com/account/create" target="_blank">Nous contacter</a></li>
+							<li><a href="http://www.cyclocity.com/Le-Mediateur2/Le-Mediateur/La-mission-de-mediation" target="_blank">Le mediateur</a></li>
+							<li><a href="https://www.facebook.com/velov.officiel/" target="_blank">Facebook</a></li>
+						</ul>
+						<ul class="footer_ul">
+							<li><span class="span_ul">CGAU </span><a href="https://velov.grandlyon.com/documents/cgau/vls" target="_blank"><span>VLS</span></a> | <a href="https://velov.grandlyon.com/documents/cgau/vld" target="_blank"><span>VLD</span></a></li>
+							<li><a href="https://velov.grandlyon.com/account/create" target="_blank">Espace annonceurs</a></li>
+							<li><a href="https://velov.grandlyon.com/site-map" target="_blank">Plan du site</a></li>
+						</ul>
+
+					</div>
+
+				</div>
+
+				<!-- troisieme couche du footer -->
+
+				<div class="row footer_1 footer_div_3">
+
+					<!-- liens de bas de page gauche -->
+
+					<div class="footer_div foot_div_1">
+						<p>
+							<a href="https://velov.grandlyon.com/legal-information/legal-notices" target="_blank"><span class="foot-white">Mentions légales</span></a> | <a href="https://velov.grandlyon.com/legal-information/privacy-policy" target="_blank"><span class="foot-white">Politique de protection des données personnelles</span></a>
+						</p>
+					</div>	
+
+					<!-- liens de bas de page droite -->
+
+					<div class="footer_div foot_div_2">
+						<p><a href="https://www.grandlyon.com/" target="_blank" class="foot-white">Un service de la metropole de Lyon</a></p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</footer>
+		
+	</div>
+
+	 <!-- chargement de la map -->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyAuyBrDnODYfoUESoQVwxJxpyZsFshnfBk"></script>
+    <!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<!-- redirection des cartes "infos"-->
+	<script src="js/redirection.js"></script>
+    <!-- apparition des div au scroll -->
+	<script src="js/scroll.js"></script>
+	<!-- menu modal -->
+	<script src="js/menu.js"></script>
+	<!-- slider cube 3D -->
+	<script src="js/slider.js"></script>
+	<!-- style de la map et API -->
+	<script src="js/map.js"></script>
+	<!-- signature -->
+	<script src="js/signature.js"></script>
+	
+</body>
+</html>

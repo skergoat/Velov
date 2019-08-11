@@ -1,0 +1,798 @@
+
+@media all and (max-width:1200px){
+
+	/* margin top de la div "offre" du bas */
+
+	.div_offres:nth-child(3) {
+
+		margin-top:15px;
+	}
+
+	/* fermeture du formulaire */
+
+	.bouton_fermer {
+
+		margin:auto;
+		display:block;
+	}
+
+	/* fleche droite font awesom bouton fermer */
+
+	#closeForm {
+
+		display:none;
+	}
+
+	/* fleche top font awesom bouton fermer */
+
+	.fa-sort-up {
+
+		font-size:30px;
+		color:#F42F34;
+		display:block;
+	}
+
+	/* "fermer" */
+
+	.bouton_fermer p {
+
+		margin-top:0px;
+		margin-left:0px;
+		margin-right:0px;
+	}
+
+	/* ouvrir le formulaire d'inscription */
+
+	.etendForm {
+
+		animation-fill-mode:forwards;
+		animation-name: ouvreForm2;
+		animation-duration: 1s;
+	}
+
+	@keyframes ouvreForm2 {
+
+	  from{
+	  	width:100%;
+	  	height:0px;
+	  }
+
+	  to {
+	  	width:100%;
+	    height:680px;
+	  }
+
+	}
+
+	/* fermer le formulaire d'inscription */
+
+	.fermerForm {
+
+		animation-fill-mode:forwards;
+		animation-name: fermeForm2;
+		animation-duration: 1s;
+	}
+
+	@keyframes fermeForm2 {
+
+	  from{
+
+	    height:680px;
+	  	width:100%;
+	  }
+
+	  to {
+
+	  	height:0px;
+	    width:100%;
+	  }
+
+	}
+
+	/* changement direction et taille map */
+
+	.section_carte {
+
+		flex-direction:column;
+	}
+
+	#carte, .formulaire {
+
+		width:100%;
+	}
+
+	/* changement direction et taille formulaire */
+
+	.formulaire {
+
+		height:0px;
+		width:100%;
+		border-left:0px;
+	}
+
+	/* conteneur des infos et signature */
+
+	#container_form_signature {
+
+		width:100%;
+		display:flex;
+	}
+
+	/* style des infos */
+
+	.infosStation {
+
+		width:100%;
+	}
+
+	/* position de la signature */
+
+	#signature {
+
+		display:block;
+		margin:auto;
+		margin-bottom:10px;
+	}
+
+	/* position des boutons d'inscription */
+
+	.reservation {
+
+		display:flex;
+		justify-content:space-around;
+	}
+
+	/* centrage de "signature" et des boutons d'inscription */
+
+	.titre_signature, .reservation {
+
+		width:300px;
+		margin:auto;
+	} 
+
+	/* tialle conteneur pied de page */
+
+	.infos_piedDepage {
+
+		width:100%;
+		height:144px;
+	}
+
+	/* titre pied de page */
+
+	.infos_piedDepage_titre p {
+
+		display:block;
+		width:100%;
+		padding-left:16%;
+		margin-left:0px;
+	}
+
+	/* bouton "annuler" */
+
+	.container_annuler {
+
+		width:20%;
+	}
+
+	/* conteneur p infos API et timer */
+
+	.infos_piedPage_info .infosStation {
+
+		padding-bottom:40px;
+	}
+
+	/* position des p dans le conteneur */ 
+
+	.infos_piedPage_info p {
+
+		height:0px;
+		margin-bottom:30px;
+		margin-top:10px;
+	} 
+
+	/* remise au center du nom de la station de reservation */
+
+	.infos_piedPage_info p:first-child {
+
+		margin-left:0px;
+	}  
+
+}
+
+
+@media all and (max-width:1102px){
+
+	/* resize des conteneur slider 
+	pour le repositionner sur la page */
+
+	.container_scene {
+
+		height:679px;
+	}
+
+	.scene {
+
+		width:100%;
+		height:700px;
+		padding-top:200px;
+	}
+
+	.slider {
+
+	  width: 600px;		/* centrage du cube */
+	  height: 300px;
+	  position: relative;
+	  transform-style: preserve-3d;
+	  margin:auto;
+	  margin-top:0px;
+	}
+
+	/* resize des faces du cube */
+
+	.front,
+	.back {
+	  width: 600px;
+	  height: 350px; 
+	}
+
+	.right,
+	.left {
+	  width: 600px;
+	  height: 350px; 
+	  left: 0px;
+	}
+
+	/* repositionnement des faces */
+
+	.front  { transform: rotateY(0deg) translateZ(300px); }
+	.back   { transform: rotateY(180deg) translateZ(300px); }
+
+	.right  { transform: rotateY( 90deg) translateZ(150px) translateZ(150px);}
+	.left   { transform: rotateY(-90deg) translateZ(150px) translateZ(150px); }
+
+	.bottom {
+
+		background:transparent;
+		height:600px;
+		width:600px;
+		transform: rotateX(-90deg) translateZ(50px) ; 
+	}
+
+	/* positionnement des boutons */
+
+	.form_direction_slider {
+
+		top:360px;
+	}
+
+	.direction_slider {
+
+		width:700px;
+	}
+
+	/* positionnement des titres */
+
+	.container_titres {
+
+		width:690px;
+	}
+
+	.img_mask { /* rectifier opacity reflet */
+
+		opacity:1;
+	}
+
+	/* image responsive */
+
+}
+
+
+@media all and (max-width:1000px){
+
+	/* reajustement du style des div "offre" */
+
+	.container_offres .div_offres:nth-child(1) {
+
+		margin-bottom:15px;
+	}
+
+	.container_offres .div_offres:nth-child(2) {
+
+		margin-bottom:15px;
+	}
+
+	.container_offres .div_offres:nth-child(3) {
+
+		margin-top:15px;
+	}
+
+	/* taille des div "actus" */
+
+	.div_actus {
+
+		width:35%;
+		margin-top:15px;
+		margin-bottom:15px;	
+	}
+	
+}
+
+
+@media all and (max-width:768px){
+
+	/* slider */
+
+	.slider {
+
+	  width: 450px;		/* centrage du cube */
+	  height: 300px;
+	  position: relative;
+	  transform-style: preserve-3d;
+	  margin:auto;
+	}
+
+	/* dimensisions de la figure */
+
+	.front,
+	.back {
+	  width: 450px;
+	  height: 350px; 
+	}
+
+	.right,
+	.left {
+	  width: 450px;
+	  height: 350px; 
+	  left: 0px;
+	}
+
+	/* position des faces */
+
+	.front  { transform: rotateY(0deg) translateZ(225px); }
+	.back   { transform: rotateY(180deg) translateZ(225px); }
+
+	.right  { transform: rotateY( 90deg) translateZ(50px) translateZ(175px);}
+	.left   { transform: rotateY(-90deg) translateZ(50px) translateZ(175px); }
+
+	.bottom {
+
+		background:transparent;
+		height:450px;
+		width:450px;
+		transform: rotateX(-90deg) translateZ(125px) ; 
+	}
+
+	/* image responsive */
+
+	.frontBis {
+
+		background:url('../img/front3.png');
+		background-size:cover;
+	}
+
+	.rightBis {
+
+		background:url('../img/right3.png');
+		background-size:cover;
+	}
+
+	.backBis {
+
+		background:url('../img/back3.png');
+		background-size:cover;
+	}
+
+	.leftBis {
+
+		background:url('../img/left3.png');
+		background-size:cover;
+	}
+
+	/* positionnement des fleches */
+
+	.direction_slider {
+
+		width:500px;
+	}
+
+	/* positionnement des titres */
+
+	.textes {
+
+		top:340px;
+	}
+
+	.container_titres {
+
+		width:490px;
+	}
+
+	/* dimension des titres */
+
+	.titre{
+
+		width:300px;
+	}
+
+
+	/* reduction du bouton open */
+
+	.agrandi {
+
+		height:50px;
+		width:50px;
+		padding-top:10px;
+		transition: 0.2s ease-in-out;
+	}
+
+	/* reduction du bouton close */
+
+	.haut {
+
+		padding-top:20px;
+	}
+
+	/* div "offres" */
+
+	.div_offres {
+
+		margin-top:15px;
+		margin-bottom:15px;
+	}
+
+	/* modifications taille div "actus" */
+
+	.div_actus {
+
+		width:40%;
+	}
+
+	/* ouvrir le formulaire d'inscription */
+
+	.etendForm {
+
+		animation-fill-mode:forwards;
+		animation-name: ouvreForm3;
+		animation-duration: 1s;
+	}
+
+	@keyframes ouvreForm3 {
+
+	  from{
+	  	width:100%;
+	  	height:0px;
+	  }
+
+	  to {
+	  	width:100%;
+	    height:1145px;
+	  }
+
+	}
+
+	/* fermer le formulaire d'inscription */
+
+	.fermerForm {
+
+		animation-fill-mode:forwards;
+		animation-name: fermeForm3;
+		animation-duration: 1s;
+	}
+
+	@keyframes fermeForm3 {
+
+	  from{
+	  	height:1145px;
+	  	width:100%;
+	  }
+
+	  to {
+
+	  	height:0px;
+	    width:100%;
+	  }
+
+	}
+
+	/* container general infos API + signature */
+
+	#container_form_signature {
+
+		display:block;
+	}
+
+	/* container respectif API et signature */
+
+	.container_infos_station,
+	#container_signature {
+
+		width:100%;
+	}
+
+	/* border bottom pour separer les div */
+
+	.container_infos_station {
+
+		border-bottom:1px solid black;
+		padding-bottom:40px;
+	}
+
+	/* conteneur general titre pied de page et bouton "annuler" */
+
+	.infos_piedDepage_titre {
+
+		display:flex;
+		justify-content:center;
+	}
+
+	/* position du titre dans son conteneur propre */
+
+	.infos_piedDepage_titre p {
+
+		display:block;
+		width:230px;
+		padding-left:0px;
+		
+	}
+
+	/* conteneur propre du bouton annuler */
+
+	.container_annuler {
+
+		width:100px;
+	}
+
+}
+
+
+@media all and (max-width:620px){
+
+	/* resize des conteneurs du slider */
+
+	.container_scene {
+
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		width:100%;
+		height:650px;
+	}
+
+	.scene {
+
+		width:100%;
+		padding-top:220px;
+	}
+
+	.slider {
+
+	  width: 270px;		/* centrage du cube */
+	  height: 300px;
+	  position: relative;
+	  transform-style: preserve-3d;
+	  margin:auto;
+
+	}
+
+	/* dimensisions de la figure */
+
+	.front,
+	.back {
+	  width:270px;
+	  height: 350px; 
+	}
+
+	.right,
+	.left {
+	  width: 270px;
+	  height: 350px; 
+	  left: 0px;
+	}
+
+	/* position des faces */
+
+	.front  { transform: rotateY(0deg) translateZ(135px); }
+	.back   { transform: rotateY(180deg) translateZ(135px); }
+
+	.right  { transform: rotateY( 90deg) translateZ(-10px) translateZ(145px);}
+	.left   { transform: rotateY(-90deg) translateZ(-10px) translateZ(145px); }
+
+	.bottom {
+
+		background:transparent;
+		height:270px;
+		width:270px;
+		transform: rotateX(-90deg) translateZ(215px) ; 
+	}
+
+	/* image responsive */
+
+	.frontBis {
+
+		background:url('../img/front4.png');
+		background-size:cover;
+	}
+
+	.rightBis {
+
+		background:url('../img/right4.png');
+		background-size:cover;
+	}
+
+	.backBis {
+
+		background:url('../img/back4.png');
+		background-size:cover;
+	}
+
+	.leftBis {
+
+		background:url('../img/left4.png');
+		background-size:cover;
+	}
+
+	/* boutons */
+
+	.form_direction_slider {
+
+		top:350px;
+	}
+
+	.direction_slider {
+
+		width:300px;
+	}
+
+	/* titres */
+
+	.textes {
+
+		top:340px;
+	}
+
+	.container_titres {
+
+		width:270px;
+	}
+
+	.titre {
+
+		width:200px;
+	}
+
+}
+
+
+
+@media all and (max-width:571px){
+
+	/* header */
+
+	#cadre_left, #cadre_right {
+
+		display:none;
+		width:0%;
+	}
+
+	/* titre slider */
+
+	h5 {
+
+		font-size:23px;
+	}
+
+	/* section carte */
+
+	/* position du contenu */
+
+	.section_carte {
+
+		padding-right:0px;
+		padding-left:0px;	
+	}
+
+	/* reduction du logo principal et positionnement en haut de la page */
+
+	#logo_fixed {
+
+		animation-fill-mode:forwards;
+		animation-name: logo2;
+		animation-duration: 1s;
+	}
+
+	@keyframes logo2 {
+
+	  from{
+	    transform: translateY(100%); 
+	    height:70px;
+		width:70px;
+		position: absolute;
+		left:43%;
+		top:15px;
+	  }
+
+	  to {
+	    transform: translateY(0%);
+	    height:40px;
+		width:40px;
+		position: absolute;
+		left:44%;
+		margin-top:5px;
+
+	  }
+
+	}
+
+	/* changement de direction du menu */
+
+	ul { 
+
+		flex-direction:column;
+		align-items:center;
+	}
+
+	#liste_menu {
+
+		padding-top:70px;
+	}
+
+	/* style du menu */
+
+	#liste_menu ul li {
+
+		margin-right:0px;
+		margin-left:0px;
+		margin-top:10px;
+		margin-bottom:10px;
+		transition: 0.5s ease-in-out;
+	}
+
+	#liste_menu ul li:hover::after {
+
+		top:-10px;
+	}
+
+	/* remontee du bouton contact */
+
+	#container_bouton_contact {
+
+		width:100%;
+		display:flex;
+		justify-content:center;
+		padding-top:30px;
+	}
+
+	/* diminution margin "actu" */
+
+	.div_actus {
+
+		width:100%;
+		margin-right:15px;
+		margin-left:15px;
+	}
+
+	/*** footer ***/
+
+	footer{
+
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+	.footer_div_ul {
+
+		width:100%;
+	}
+
+	.div_bouton_footer {
+
+		margin-bottom:10px;
+	}
+
+	.foot_div_2 {
+
+		width:40%;
+	}
+}
+

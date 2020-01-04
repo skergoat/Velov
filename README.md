@@ -1,2 +1,2 @@
 # velov
-3rd OC project 
+Living demo : https://skergoat.com/velov/
